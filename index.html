@@ -4,415 +4,475 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#070d18">
-  <meta name="description" content="Shourya Jain's portfolio — aspiring software developer, B.Tech student, programming projects and certifications.">
-  <title>Shourya Jain | Software Developer Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Shourya Jain's portfolio - Aspiring Software Developer and B.Tech student.">
+  <title>Shourya Jain | Developer Portfolio</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- GitHub and LinkedIn icons -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
+
 <body>
+  <header class="navbar">
+    <a href="#home" class="logo">SJ<span>.</span></a>
 
-  <aside class="sidebar">
-    <a class="logo" href="#home">S<span>J</span></a>
-
-    <div class="side-profile">
-      <h2>Shourya <span>Jain</span></h2>
-      <p>Aspiring Software Developer</p>
-    </div>
-
-    <nav class="navigation">
-      <a class="nav-link active" href="#home">⌂ <span>Home</span></a>
-      <a class="nav-link" href="#about">♙ <span>About</span></a>
-      <a class="nav-link" href="#projects">‹› <span>Projects</span></a>
-      <a class="nav-link" href="#skills">▤ <span>Skills</span></a>
-      <a class="nav-link" href="#education">♧ <span>Education</span></a>
-      <a class="nav-link" href="#certificates">✧ <span>Certificates</span></a>
-      <a class="nav-link" href="#contact">✉ <span>Contact</span></a>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
     </nav>
 
-    <div class="side-bottom">
-      <div class="social-links">
-        <a href="https://www.linkedin.com/in/shourya-jain-11a460226/" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
-        <a href="https://github.com/Shourya7409/Shourya-Jain" target="_blank" rel="noopener" aria-label="GitHub">GH</a>
-        <a href="mailto:shouryajain496@gmail.com" aria-label="Email">✉</a>
-      </div>
-      <p>© 2026 Shourya Jain</p>
-      <p>Built with <span class="heart">♥</span></p>
-    </div>
-  </aside>
+    <button id="themeToggle" class="theme-button" aria-label="Toggle theme">
+      <i class="fa-solid fa-moon"></i>
+    </button>
+  </header>
 
-  <main class="main-content">
-    <header class="topbar">
-      <a href="#home" class="topbar-name">Shourya <span>Jain</span></a>
-      <div class="topbar-right">
-        <span class="availability"><span class="status-dot"></span> Open to internships</span>
-        <button id="theme Toggle" class="theme-toggle" aria-label="Toggle light and dark theme">☼</button>
-      </div>
-    </header>
+  <main>
+    <!-- HERO SECTION -->
+    <section id="home" class="hero section">
+      <div class="hero-content">
+        <p class="eyebrow"><span class="status-dot"></span> Welcome to my portfolio</p>
 
-  
-    <section class="hero section" id="home">
-      <div class="hero-text">
-        <p class="eyebrow">HELLO, I'M</p>
-        <h1>Shourya <span>Jain</span></h1>
-        <h2>Aspiring Software Developer</h2>
+        <h1>Hi, I'm <span>Shourya Jain</span></h1>
+
+        <h2>Aspiring Software Developer <span class="separator">|</span> B.Tech Student</h2>
+
         <p class="hero-description">
-          I am a B.Tech student at Inderprastha Engineering College,
-          Ghaziabad, passionate about web development, programming
-          and solving real-world problems through code. I enjoy
-          learning new technologies and building useful projects.
+          I am a third-year B.Tech student at Inderprastha Engineering College,
+          Ghaziabad, passionate about software development, web technologies,
+          and programming. I enjoy learning new technologies and building
+          practical projects that solve real-world problems.
         </p>
 
         <div class="hero-buttons">
-          <a class="btn primary" href="#projects">‹› &nbsp; View My Projects →</a>
-          <a class="btn secondary" href="#contact">✉ &nbsp; Get In Touch</a>
+          <a href="#projects" class="btn btn-primary">
+            View Projects <i class="fa-solid fa-arrow-right"></i>
+          </a>
+
+          <!-- Keep your resume file in the same folder as index.html -->
+          <a href="resume.pdf" class="btn btn-secondary" download>
+            <i class="fa-solid fa-download"></i> Download Resume
+          </a>
+
+          <a href="#contact" class="btn btn-outline">Contact Me</a>
         </div>
 
-        <div class="hero-tags">
-          <span>Python</span>
-          <span>Java</span>
-          <span>Web Development</span>
+        <div class="social-links">
+          <a href="https://github.com/Shourya7409"
+             target="_blank" rel="noopener noreferrer"
+             aria-label="GitHub profile">
+            <i class="fa-brands fa-github"></i>
+            <span>GitHub</span>
+          </a>
+
+          <a href="https://www.linkedin.com/in/shourya-jain-11a460226/"
+             target="_blank" rel="noopener noreferrer"
+             aria-label="LinkedIn profile">
+            <i class="fa-brands fa-linkedin"></i>
+            <span>LinkedIn</span>
+          </a>
         </div>
       </div>
 
-      <div class="hero-visual">
-        <div class="photo-glow"></div>
-        <img src="Shourya Jain profile photo.jpeg" alt="Shourya Jain profile photo"
-             class="profile-photo"
-             onerror="this.style.display='none';document.getElementById('photoFallback').style.display='grid'">
-        <div id="photoFallback" class="photo-fallback">SJ</div>
-        <div class="hero-motto">Code<br>Learn<br>Build<br>Grow<span>↗</span></div>
-        <div class="orbit orbit-one"></div>
-        <div class="orbit orbit-two"></div>
+      <div class="hero-image">
+        <div class="image-glow"></div>
+        <img
+          src="Shourya Jain profile photo.jpeg"
+          alt="Shourya Jain - Aspiring Software Developer"
+          class="profile-photo"
+          id="profilePhoto"
+        >
+        <div class="image-caption">
+          <span class="caption-icon"><i class="fa-solid fa-code"></i></span>
+          <div>
+            <strong>Learning by Building</strong>
+            <small>Code · Create · Improve</small>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="info-grid section">
-      <article class="info-card">
-        <div class="info-icon">♧</div>
-        <div>
-          <h3>Education</h3>
-          <p>Inderprastha Engineering College</p>
-          <p>Ghaziabad · B.Tech · 2028</p>
-        </div>
-      </article>
-
-      <article class="info-card">
-        <div class="info-icon">▣</div>
-        <div>
-          <h3>Internship Preference</h3>
-          <p>Virtual / Remote</p>
-          <p>Paid internship opportunities</p>
-        </div>
-      </article>
-
-      <article class="info-card">
-        <div class="info-icon">◎</div>
-        <div>
-          <h3>Preferred Domains</h3>
-          <p>Software & Web Development</p>
-          <p>Python · Java · Frontend</p>
-        </div>
-      </article>
-
-      <article class="info-card">
-        <div class="info-icon">▦</div>
-        <div>
-          <h3>Career Goal</h3>
-          <p>Aspiring Software Developer</p>
-          <p>Learning through practical projects</p>
-        </div>
-      </article>
-    </section>
-
-    <section class="split-grid section" id="about">
-      <article class="panel about-panel">
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section">
+      <div class="section-heading">
         <p class="eyebrow">GET TO KNOW ME</p>
         <h2>About <span>Me</span></h2>
-        <h3>Who I Am</h3>
+      </div>
+
+      <div class="about-card">
         <p>
-          I am a third-year B.Tech student at Inderprastha Engineering
-          College, Ghaziabad. I am developing my programming and
-          web development skills through coursework, training and
-          hands-on practice.
+          I am pursuing B.Tech at Inderprastha Engineering College, Ghaziabad.
+          I am developing my skills in programming, web development, and
+          software engineering. My goal is to gain practical experience,
+          contribute to meaningful projects, and grow as a software developer.
         </p>
         <p>
-          I am interested in creating responsive websites, learning
-          software development concepts and solving problems with code.
-          I am looking for opportunities to learn from experienced teams
-          and contribute to real-world projects.
+          I believe in continuous learning, teamwork, and improving my
+          problem-solving abilities through hands-on practice.
         </p>
-
-        <div class="mini-stats">
-          <div><strong>9</strong><span>Certificates displayed</span></div>
-          <div><strong>3+</strong><span>Areas of learning</span></div>
-          <div><strong>2028</strong><span>Expected graduation</span></div>
-        </div>
-        <p class="small-note">Certificate count reflects the items listed in this portfolio.</p>
-      </article>
-
-      <article class="panel skills-panel" id="skills">
-        <p class="eyebrow">WHAT I WORK WITH</p>
-        <h2>My <span>Skills</span></h2>
-
-        <div class="skill-group">
-          <h4>Programming Languages</h4>
-          <div class="pills">
-            <span>Python</span><span>Java</span><span>JavaScript</span><span>C</span>
-          </div>
-        </div>
-
-        <div class="skill-group">
-          <h4>Web Technologies</h4>
-          <div class="pills">
-            <span>HTML</span><span>CSS</span><span>Node.js</span>
-          </div>
-        </div>
-
-        <div class="skill-group">
-          <h4>Database Management</h4>
-          <div class="pills">
-            <span>SQL</span><span>MySQL</span><span>MongoDB</span>
-          </div>
-        </div>
-         
-        <div class="skill-group">
-         <h4>Frameworks</h4>
-          <div class="pills">
-            <span>Spring Boot</span><span>FastAPI</span><span>React.js</span>
-          </div>
-        </div>
-
-
-
-        <div class="skill-group">
-          <h4>Developer Tools</h4>
-          <div class="pills">
-            <span>Git</span><span>GitHub</span><span>VS Code</span>
-          </div>
-        </div>
-      </article>
+      </div>
     </section>
 
-    <section class="panel section" id="projects">
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="section">
       <div class="section-heading">
-        <div>
-          <p class="eyebrow">WHAT I'M BUILDING</p>
-          <h2>My <span>Projects</span></h2>
-        </div>
-        <a class="text-link" href="https://github.com/Shourya7409/Shourya-Jain" target="_blank" rel="noopener">GitHub Profile ↗</a>
+        <p class="eyebrow">WHAT I AM LEARNING</p>
+        <h2>My <span>Skills</span></h2>
+      </div>
+
+      <div class="skills-grid">
+        <article class="skill-card">
+          <i class="fa-brands fa-html5"></i>
+          <h3>HTML & CSS</h3>
+          <p>Building and styling responsive web pages.</p>
+        </article>
+
+        <article class="skill-card">
+          <i class="fa-brands fa-js"></i>
+          <h3>JavaScript</h3>
+          <p>Learning interactive web development.</p>
+        </article>
+
+        <article class="skill-card">
+          <i class="fa-brands fa-java"></i>
+          <h3>Java</h3>
+          <p>Practising programming and object-oriented concepts.</p>
+        </article>
+
+        <article class="skill-card">
+          <i class="fa-brands fa-python"></i>
+          <h3>Python</h3>
+          <p>Developing programming fundamentals.</p>
+        </article>
+
+        <article class="skill-card">
+          <i class="fa-solid fa-database"></i>
+          <h3>DBMS</h3>
+          <p>Learning database concepts and SQL fundamentals.</p>
+        </article>
+
+        <article class="skill-card">
+          <i class="fa-brands fa-git-alt"></i>
+          <h3>Git & GitHub</h3>
+          <p>Practising version control and project hosting.</p>
+        </article>
+      </div>
+      <p class="small-note">Keep only the skills you can confidently discuss in an interview.</p>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">MY WORK</p>
+        <h2>Featured <span>Projects</span></h2>
       </div>
 
       <div class="projects-grid">
         <article class="project-card">
-          <div class="project-icon">☕</div>
-          <div class="project-content">
-            <h3>Student Grade Tracker <span class="tag">Java</span></h3>
-            <p>A console-based practice project for storing student names and marks and calculating total, highest, lowest and average marks.</p>
-            <div class="project-tech"><span>Java</span><span>ArrayList</span></div>
+          <div class="project-icon"><i class="fa-solid fa-laptop-code"></i></div>
+          <h3>Personal Portfolio</h3>
+          <p>
+            A personal website showcasing my introduction, skills,
+            projects, and professional links.
+          </p>
+          <div class="project-tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
           </div>
+          <a href="https://github.com/Shourya7409"
+             target="_blank" rel="noopener noreferrer" class="project-link">
+            View on GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
         </article>
 
         <article class="project-card">
-          <div class="project-icon">⌘</div>
-          <div class="project-content">
-            <h3>Personal Portfolio Website <span class="tag">Web</span></h3>
-            <p>A responsive personal website showcasing my education, skills, projects and certificates using HTML, CSS and JavaScript.</p>
-            <div class="project-tech"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          <div class="project-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+          <h3>Student Grade Tracker</h3>
+          <p>
+            A Java practice project for recording student marks and
+            calculating average, highest, and lowest scores.
+          </p>
+          <div class="project-tags">
+            <span>Java</span><span>OOP</span><span>Collections</span>
           </div>
+          <a href="https://github.com/Shourya7409"
+             target="_blank" rel="noopener noreferrer" class="project-link">
+            View on GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
         </article>
       </div>
+
+      <p class="small-note">
+        Replace the GitHub links above with the direct repository links for
+        each project when available.
+      </p>
     </section>
 
-    <section class="panel section" id="education">
-      <p class="eyebrow">MY ACADEMIC JOURNEY</p>
-      <h2>Education <span>Details</span></h2>
-
-      <div class="timeline">
-        <div class="timeline-mark"></div>
-        <div>
-          <h3>Bachelor of Technology (B.Tech)</h3>
-          <p class="highlight">Inderprastha Engineering College, Ghaziabad</p>
-          <p>Currently in 3rd year · Expected graduation: 2028</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="panel section" id="certificates">
-      <div class="section-heading">
-        <div>
-          <p class="eyebrow">LEARNING & ACHIEVEMENTS</p>
-          <h2>Certificates <span>& Training</span></h2>
-          <p class="section-subtitle">Select any certificate to view the image larger.</p>
-        </div>
-        <span class="certificate-count">9 Certificates</span>
-      </div>
-
-      <div class="certificate-grid">
-        <article class="certificate-card">
-          <button class="certificate-image" data-image="Certificate.jpeg" data-title="Python Programming using Emerging Technologies">
-            <img src="Certificate.jpeg" alt=" 🐍 IIIT Delhi Python training certificate" loading="lazy">
-            <span class="view-overlay">View Certificate ↗</span>
-          </button>
-          <div class="certificate-info">
-            <span class="certificate-category">Python · Training</span>
-            <h3>Python Programming using Emerging Technologies</h3>
-            <p>Indraprastha Institute of Information Technology Delhi (IIIT-Delhi)</p>
-            <span class="certificate-date">17–28 August 2026</span>
-          </div>
-        </article>
-
-        <article class="certificate-card">
-          <button class="certificate-image" data-image="Certificate2.jpeg" data-title="Full Stack Development Virtual Internship">
-            <img src="Certificate2.jpeg" alt="DecodeLabs virtual internship certificate" loading="lazy">
-            <span class="view-overlay">View Certificate ↗</span>
-          </button>
-          <div class="certificate-info">
-            <span class="certificate-category">Internship</span>
-            <h3>Full Stack Development Virtual Internship</h3>
-            <p>DecodeLabs Virtual Internship Program</p>
-            <span class="certificate-date">25 June – 25 July 2026</span>
-          </div>
-        </article>
-
-        <article class="certificate-card">
-          <button class="certificate-image" data-image="Certificate3.jpeg" data-title="Java Programming Virtual Internship">
-            <img src="Certificate3.jpeg" alt="CodeAlpha Java programming internship certificate" loading="lazy">
-            <span class="view-overlay">View Certificate ↗</span>
-          </button>
-          <div class="certificate-info">
-            <span class="certificate-category">Java · Internship</span>
-            <h3>Java Programming Virtual Internship</h3>
-            <p>CodeAlpha</p>
-            <span class="certificate-date">20 June – 20 July 2026</span>
-          </div>
-        </article>
-
-        <article class="certificate-card">
-          <button class="certificate-image" data-image="Certificate4.jpeg" data-title="MongoDB Basics for Students">
-            <img src="Certificate4.jpeg" alt="MongoDB Basics for Students certificate" loading="lazy">
-            <span class="view-overlay">View Certificate ↗</span>
-          </button>
-          <div class="certificate-info">
-            <span class="certificate-category">Database</span>
-            <h3>MongoDB Basics for Students</h3>
-            <p>MongoDB</p>
-            <span class="certificate-date">12 July 2026</span>
-          </div>
-        </article>
-
-        <article class="certificate-card">
-          <button class="certificate-image" data-image="Certificate5.jpeg" data-title="HTML and CSS">
-            <img src="Certificate5.jpeg" alt="thingQbator HTML and CSS certificate" loading="lazy">
-            <span class="view-overlay">View Certificate ↗</span>
-          </button>
-          <div class="certificate-info">
-            <span class="certificate-category">Web Development</span>
-            <h3>HTML & CSS</h3>
-            <p>thingQbator · NASSCOM Foundation</p>
-            <span class="certificate-date">Date not specified</span>
-          </div>
-        </article>
-
-        <article class="certificate-card">
-          <button class="certificate-image" data-image="Certificate6.jpeg" data-title="Foundations of Prompt Engineering">
-            <img src="Certificate6.jpeg" alt="AWS Foundations of Prompt Engineering certificate" loading="lazy">
-            <span class="view-overlay">View Certificate ↗</span>
-          </button>
-          <div class="certificate-info">
-            <span class="certificate-category">Generative AI</span>
-            <h3>Foundations of Prompt Engineering</h3>
-            <p>AWS Training & Certification</p>
-            <span class="certificate-date">21 June 2026</span>
-          </div>
-        </article>
-
-        <article class="certificate-card">
-          <button class="certificate-image" data-image="Certificate7.jpeg" data-title="Technology Job Simulation">
-            <img src="Certificate7.jpeg" alt="Deloitte Technology Job Simulation certificate" loading="lazy">
-            <span class="view-overlay">View Certificate ↗</span>
-          </button>
-          <div class="certificate-info">
-            <span class="certificate-category">Job Simulation</span>
-            <h3>Technology Job Simulation</h3>
-            <p>Deloitte · Forage</p>
-            <span class="certificate-date">18 June 2026</span>
-          </div>
-        </article>
-
-        <article class="certificate-card">
-          <button class="certificate-image" data-image="Certificate8.jepg" data-title="Python Full Stack Internship">
-            <img src="Certificate8.jpeg" alt="EduSkills Python Full Stack internship certificate" loading="lazy">
-            <span class="view-overlay">View Certificate ↗</span>
-          </button>
-          <div class="certificate-info">
-            <span class="certificate-category">Python · Full Stack</span>
-            <h3>Python Full Stack Internship</h3>
-            <p>EduSkills Academy</p>
-            <span class="certificate-date">Issued June 2026</span>
-          </div>
-        </article>
-
-        <article class="certificate-card">
-          <button class="certificate-image" data-image="Certificate9.jpeg" data-title="Python Full Stack Developer Virtual Internship">
-            <img src="Certificate9.jpeg" alt="AICTE EduSkills virtual internship certificate" loading="lazy">
-            <span class="view-overlay">View Certificate ↗</span>
-          </button>
-          <div class="certificate-info">
-            <span class="certificate-category">Virtual Internship</span>
-            <h3>Python Full Stack Developer Virtual Internship</h3>
-            <p>AICTE · EduSkills</p>
-            <span class="certificate-date">April – June 2026 · 8 weeks</span>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section class="panel section" id="contact">
-      <p class="eyebrow">LET'S CONNECT</p>
-      <h2>Get In <span>Touch</span></h2>
-      <p class="contact-intro">I am interested in learning opportunities, internships and software development projects.</p>
-
-      <div class="contact-grid">
-        <a class="contact-card" href="mailto:shouryajain496@gmail.com">
-          <span class="contact-icon">✉</span>
-          <span><strong>Email</strong><small>shouryajain496@gmail.com</small></span>
-          <span class="contact-arrow">↗</span>
-        </a>
-        <a class="contact-card" href="https://www.linkedin.com/in/shourya-jain-11a460226/" target="_blank" rel="noopener">
-          <span class="contact-icon">in</span>
-          <span><strong>LinkedIn</strong><small>Connect with me</small></span>
-          <span class="contact-arrow">↗</span>
-        </a>
-        <a class="contact-card" href="https://github.com/Shourya7409/Shourya-Jain" target="_blank" rel="noopener">
-          <span class="contact-icon">GH</span>
-          <span><strong>GitHub</strong><small>Explore my code</small></span>
-          <span class="contact-arrow">↗</span>
-        </a>
-      </div>
-    </section>
-
-    <footer class="main-footer">
-      <span>© 2026 Shourya Jain</span>
-      <span>Designed & built with <span class="heart">♥</span></span>
-    </footer>
-  </main>
-
-  <!-- Certificate image preview -->
-  <div class="modal" id="certificateModal" aria-hidden="true">
-    <div class="modal-backdrop" id="modalBackdrop"></div>
-    <div class="modal-content" role="dialog" aria-modal="true" aria-label="Certificate preview">
-      <div class="modal-header">
-        <h3 id="modalTitle">Certificate</h3>
-        <button id="closeModal" class="close-modal" aria-label="Close preview">✕</button>
-      </div>
-      <img id="modalImage" src="" alt="Certificate preview">
-      <p class="modal-help">Press Escape or click outside the image to close.</p>
-    </div>
+    
+<!-- CERTIFICATES SECTION -->
+<section id="certificates" class="section">
+  <div class="section-heading">
+    <p class="eyebrow">LEARNING & ACHIEVEMENTS</p>
+    <h2>My <span>Certificates</span></h2>
+    <p class="certificate-intro">
+      Certifications and learning experiences that reflect my interest
+      in programming, web development, and emerging technologies.
+    </p>
   </div>
 
-  <button id="topButton" title="Back to top" aria-label="Back to top">↑</button>
+  <div class="certificate-grid">
+
+    <article class="certificate-card">
+      <button type="button" class="certificate-image"
+        data-image="Certificate1.jpeg"
+        data-title="Python Programming using Emerging Technologies"
+        aria-label="Preview Python Programming certificate">
+        <img src="Certificate1.jpeg"
+          alt="Python Programming using Emerging Technologies certificate"
+          loading="lazy">
+        <span class="preview-overlay"><i class="fa-solid fa-eye"></i> Preview</span>
+      </button>
+      <div class="certificate-info">
+        <span class="certificate-category">Programming</span>
+        <h3>Python Programming using Emerging Technologies</h3>
+        <button type="button" class="view-certificate"
+          data-image="Certificate1.jpeg"
+          data-title="Python Programming using Emerging Technologies">
+          View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </button>
+      </div>
+    </article>
+
+    <article class="certificate-card">
+      <button type="button" class="certificate-image"
+        data-image="Certificate2.jpeg"
+        data-title="Full Stack Development Virtual Internship"
+        aria-label="Preview Full Stack Development certificate">
+        <img src="Certificate2.jpeg"
+          alt="Full Stack Development Virtual Internship certificate"
+          loading="lazy">
+        <span class="preview-overlay"><i class="fa-solid fa-eye"></i> Preview</span>
+      </button>
+      <div class="certificate-info">
+        <span class="certificate-category">Web Development</span>
+        <h3>Full Stack Development Virtual Internship</h3>
+        <button type="button" class="view-certificate"
+          data-image="Certificate2.jpeg"
+          data-title="Full Stack Development Virtual Internship">
+          View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </button>
+      </div>
+    </article>
+
+    <article class="certificate-card">
+      <button type="button" class="certificate-image"
+        data-image="Certificate3.jpeg"
+        data-title="Java Programming Virtual Internship"
+        aria-label="Preview Java Programming certificate">
+        <img src="Certificate3.jpeg"
+          alt="Java Programming Virtual Internship certificate"
+          loading="lazy">
+        <span class="preview-overlay"><i class="fa-solid fa-eye"></i> Preview</span>
+      </button>
+      <div class="certificate-info">
+        <span class="certificate-category">Programming</span>
+        <h3>Java Programming Virtual Internship</h3>
+        <button type="button" class="view-certificate"
+          data-image="Certificate3.jpeg"
+          data-title="Java Programming Virtual Internship">
+          View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </button>
+      </div>
+    </article>
+
+    <article class="certificate-card">
+      <button type="button" class="certificate-image"
+        data-image="Certificate4.jpeg"
+        data-title="MongoDB Basics for Students"
+        aria-label="Preview MongoDB certificate">
+        <img src="Certificate4.jpeg"
+          alt="MongoDB Basics for Students certificate"
+          loading="lazy">
+        <span class="preview-overlay"><i class="fa-solid fa-eye"></i> Preview</span>
+      </button>
+      <div class="certificate-info">
+        <span class="certificate-category">Database</span>
+        <h3>MongoDB Basics for Students</h3>
+        <button type="button" class="view-certificate"
+          data-image="Certificate4.jpeg"
+          data-title="MongoDB Basics for Students">
+          View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </button>
+      </div>
+    </article>
+
+    <article class="certificate-card">
+      <button type="button" class="certificate-image"
+        data-image="Certificate5.jpeg"
+        data-title="HTML & CSS"
+        aria-label="Preview HTML and CSS certificate">
+        <img src="Certificate5.jpeg"
+          alt="HTML and CSS certificate"
+          loading="lazy">
+        <span class="preview-overlay"><i class="fa-solid fa-eye"></i> Preview</span>
+      </button>
+      <div class="certificate-info">
+        <span class="certificate-category">Web Development</span>
+        <h3>HTML & CSS</h3>
+        <button type="button" class="view-certificate"
+          data-image="Certificate5.jpeg"
+          data-title="HTML & CSS">
+          View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </button>
+      </div>
+    </article>
+
+    <article class="certificate-card">
+      <button type="button" class="certificate-image"
+        data-image="Certificate6.jpeg"
+        data-title="Foundations of Prompt Engineering"
+        aria-label="Preview Prompt Engineering certificate">
+        <img src="Certificate6.jpeg"
+          alt="Foundations of Prompt Engineering certificate"
+          loading="lazy">
+        <span class="preview-overlay"><i class="fa-solid fa-eye"></i> Preview</span>
+      </button>
+      <div class="certificate-info">
+        <span class="certificate-category">Generative AI</span>
+        <h3>Foundations of Prompt Engineering</h3>
+        <button type="button" class="view-certificate"
+          data-image="Certificate6.jpeg"
+          data-title="Foundations of Prompt Engineering">
+          View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </button>
+      </div>
+    </article>
+
+    <article class="certificate-card">
+      <button type="button" class="certificate-image"
+        data-image="Certificate7.jpeg"
+        data-title="Technology Job Simulation"
+        aria-label="Preview Technology Job Simulation certificate">
+        <img src="Certificate7.jpeg"
+          alt="Technology Job Simulation certificate"
+          loading="lazy">
+        <span class="preview-overlay"><i class="fa-solid fa-eye"></i> Preview</span>
+      </button>
+      <div class="certificate-info">
+        <span class="certificate-category">Job Simulation</span>
+        <h3>Technology Job Simulation</h3>
+        <button type="button" class="view-certificate"
+          data-image="Certificate7.jpeg"
+          data-title="Technology Job Simulation">
+          View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </button>
+      </div>
+    </article>
+
+    <article class="certificate-card">
+      <button type="button" class="certificate-image"
+        data-image="Certificate8.jpeg"
+        data-title="Python Full Stack Internship"
+        aria-label="Preview Python Full Stack Internship certificate">
+        <img src="Certificate8.jpeg"
+          alt="Python Full Stack Internship certificate"
+          loading="lazy">
+        <span class="preview-overlay"><i class="fa-solid fa-eye"></i> Preview</span>
+      </button>
+      <div class="certificate-info">
+        <span class="certificate-category">Internship</span>
+        <h3>Python Full Stack Internship</h3>
+        <button type="button" class="view-certificate"
+          data-image="Certificate8.jpeg"
+          data-title="Python Full Stack Internship">
+          View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </button>
+      </div>
+    </article>
+
+    <article class="certificate-card">
+      <button type="button" class="certificate-image"
+        data-image="Certificate9.jpeg"
+        data-title="Python Full Stack Developer Virtual Internship"
+        aria-label="Preview Python Full Stack Developer certificate">
+        <img src="Certificate9.jpeg"
+          alt="Python Full Stack Developer Virtual Internship certificate"
+          loading="lazy">
+        <span class="preview-overlay"><i class="fa-solid fa-eye"></i> Preview</span>
+      </button>
+      <div class="certificate-info">
+        <span class="certificate-category">Internship</span>
+        <h3>Python Full Stack Developer Virtual Internship</h3>
+        <button type="button" class="view-certificate"
+          data-image="Certificate9.jpeg"
+          data-title="Python Full Stack Developer Virtual Internship">
+          View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </button>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- CERTIFICATE PREVIEW MODAL -->
+<div class="certificate-modal" id="certificateModal"
+  role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+  <div class="modal-content">
+    <div class="modal-header">
+      <h3 id="modalTitle">Certificate Preview</h3>
+      <button type="button" class="modal-close" id="closeCertificateModal"
+        aria-label="Close certificate preview">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    <img id="modalImage" src="" alt="Selected certificate preview">
+    <p class="modal-help">Press Escape or the close button to return to the portfolio.</p>
+  </div>
+</div>
+
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">LET'S CONNECT</p>
+        <h2>Contact <span>Me</span></h2>
+      </div>
+
+      <div class="contact-card">
+        <div class="contact-icon"><i class="fa-regular fa-envelope"></i></div>
+        <h3>Have an opportunity or project in mind?</h3>
+        <p>
+          I am interested in connecting with people, learning from new
+          experiences, and exploring internship opportunities.
+        </p>
+        <a class="btn btn-primary" href="mailto:shouryajain496@gmail.com">
+          <i class="fa-solid fa-paper-plane"></i> Email Me
+        </a>
+
+        <div class="contact-socials">
+          <a href="https://github.com/Shourya7409"
+             target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/shourya-jain-11a460226/"
+             target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="currentYear"></span> Shourya Jain. Built with care.</p>
+    <a href="#home">Back to top ↑</a>
+  </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
