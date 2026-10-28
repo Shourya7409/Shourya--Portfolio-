@@ -448,7 +448,7 @@ button {
 .contact-socials a:hover {
   color: var(--accent);
 }
-
+ 
 
 /* ==========================================
    CERTIFICATES SECTION
@@ -754,6 +754,100 @@ button {
   .certificate-card:hover .certificate-image img {
     transform: none;
   }
+}
+
+
+/* Certificate 11 - Wadhwani Foundation */
+
+.certificate-card:has(
+    img[src="Certificate11.jpeg"]
+) {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.certificate-card:has(
+    img[src="Certificate11.jpeg"]
+):hover {
+    transform: translateY(-6px);
+}
+
+/* Certificate 11 image */
+.certificate-card:has(
+    img[src="Certificate11.jpeg"]
+) .certificate-image {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    display: block;
+    padding: 0;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.certificate-card:has(
+    img[src="Certificate11.jpeg"]
+) .certificate-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.certificate-card:has(
+    img[src="Certificate11.jpeg"]
+):hover .certificate-image img {
+    transform: scale(1.05);
+}
+
+/* Preview overlay */
+.certificate-card:has(
+    img[src="Certificate11.jpeg"]
+) .preview-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: #fff;
+    background: rgba(7, 12, 20, 0.65);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.certificate-card:has(
+    img[src="Certificate11.jpeg"]
+) .certificate-image:hover .preview-overlay {
+    opacity: 1;
+}
+
+/* Certificate details */
+.certificate-card:has(
+    img[src="Certificate11.jpeg"]
+) .certificate-info {
+    padding: 18px;
+}
+
+.certificate-card:has(
+    img[src="Certificate11.jpeg"]
+) .view-certificate {
+    margin-top: 12px;
+    padding: 10px 16px;
+    background: var(--blue);
+    color: #fff;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.certificate-card:has(
+    img[src="Certificate11.jpeg"]
+) .view-certificate:hover {
+    background: var(--blue-light);
+    color: #070c14;
 }
 
 .footer {

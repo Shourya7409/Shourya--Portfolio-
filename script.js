@@ -190,3 +190,54 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+
+// Certificate Preview System
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const certificateModal = document.getElementById("certificateModal");
+    const certificateModalImage = document.getElementById("certificateModalImage");
+
+    // Open certificate preview
+    document.querySelectorAll(
+        '.certificate-card [data-image]'
+    ).forEach(button => {
+
+        button.addEventListener("click", () => {
+
+            const imagePath = button.dataset.image;
+            const imageTitle = button.dataset.title;
+
+            if (certificateModal && certificateModalImage) {
+
+                certificateModalImage.src = imagePath;
+                certificateModalImage.alt = imageTitle || "Certificate Preview";
+
+                certificateModal.style.display = "flex";
+
+            }
+
+        });
+
+    });
+
+    // Close certificate modal
+    const closeButton = document.querySelector(".close-certificate");
+
+    if (closeButton) {
+        closeButton.addEventListener("click", () => {
+            certificateModal.style.display = "none";
+        });
+    }
+
+    // Close modal by clicking outside image
+    if (certificateModal) {
+        certificateModal.addEventListener("click", (event) => {
+            if (event.target === certificateModal) {
+                certificateModal.style.display = "none";
+            }
+        });
+    }
+
+});

@@ -2,6 +2,13 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "type": "java",
+      "name": "StringTest",
+      "request": "launch",
+      "mainClass": "StringTest",
+      "projectName": "Shourya Portfolio_c7abda6e"
+    },
+    {
       "name": "C/C++ Runner: Debug Session",
       "type": "cppdbg",
       "request": "launch",
